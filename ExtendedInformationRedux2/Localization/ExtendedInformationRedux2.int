@@ -1,0 +1,129 @@
+[X2Action_ApplyWeaponDamageToUnit_HITCHANCE]
+//HIT_CHANCE ="HIT";
+//CRIT_CHANCE ="CRIT";
+//DODGE_CHANCE ="DODGE";
+//MISS_CHANCE ="MISS";
+
+SHORT_GUARANTEED_HIT="G.H.";
+SHORT_HIT_CHANCE="H";
+SHORT_MISS_CHANCE="M";
+SHORT_CRIT_CHANCE="C";
+SHORT_DODGE_CHANCE="G";
+SHORT_COUNTER_CHANCE="Co"
+
+GUARANTEED_HIT ="GUARANTEED HIT";
+//GUARANTEED_MISS ="GUARANTEED MISS";
+
+REPEATER_KILL ="Repeater";
+
+FAILED_TEXT = "Failed!"
+
+[WOTC_DisplayHitChance_MCMScreen]
+sSettingsPage_MCMText = "Extended Information";
+sPageTitle_MCMText = "Extended Information";
+sGroupGeneralSettings_MCMText = "General Settings";
+sGroupFlyoverSettings_MCMText = "Damages Flyovers Settings";
+sShowHitChance_MCMText = "Show Hit Chance in Flyovers";
+sVerboseText_MCMText = "Verbose Text in Flyovers";
+sDisplayMissChance_MCMText = "Display Miss Chance instead of Hit Chance";
+//sShowTemplarMessages_MCMText = "Show Hit Chance within special Parry/Deflect/Reflect Templar's Messages Flyovers";
+sShowTemplarMessages_MCMText = "Show Hit Chance within Special Miss Flyovers";
+sShowTemplarMessages_MCMTip = "Special misses are when Untouchable, Lightning Reflexes, Parry, Deflect or Reflect force a miss."
+
+sShowAimAssist_MCMText = "Show Aim Assist";
+; sFlyoverDuration_MCMText = "Flyovers Duration";
+sShowGuaranteedHit_MCMText = "Show 'Guaranteed Hit' String";
+
+sGroupShotBar_MCMText = "Shotbar Settings";
+sBarHeight_MCMText = "Bar Height";
+;sBarOffsetX_MCMText = "Bar Offset X";
+sBarOffsetY_MCMText = "Bar Offset Y";
+sBarAlpha_MCMText = "Bar Alpha";
+;sBarWidthMult_MCMText = "Bar Width Multiplier";
+;sGeneralOffsetY_MCMText = "General Offset Y";
+;sDodgeOffsetX_MCMText = "Dodge Offset X";
+;sCritOFfsetX_MCMText = "Crit Offset X";
+;sCritOffsetY_MCMText = "Crit Offset Y";
+sHitHexColor_MCMText = "Hit Bar Colour";
+sCritHexColor_MCMText = "Crit Bar Colour";
+sDodgeHexColor_MCMText = "Graze Bar Colour";
+sAssistHexColor_MCMText = "Aim Assist Bar Color";
+sMissHexColor_MCMText = "Miss Bar Colour";
+sGroupShotHUD_MCMText = "ShotHUD Settings";
+sGroupBarColors_MCMText = "Bar Colour Settings";
+sShowGrazed_MCMText = "Show Grazed in ShotHUD";
+sShowCrit_MCMText = "Show Crit in ShotHUD";
+sAimLeftOfCrit_MCMText = "Aim Left Of Crit";
+sAssistBesideHit_MCMText = "Aim Assist Beside Hit";
+sAssistBar_MCMText = "Combine Aim Assist Bar with Normal Hit Bar";
+sPreviewMinimum_MCMText = "Preview Minimum Damage";
+sPreviewHacking_MCMText = "Preview Hacking";
+sWarningMessage_MCMText = "Please note any change to Offset might result in bad display!";
+sGrazeCritLayout_MCMText = "Graze Chance and Crit Damage Display Layout"
+
+
+;DEBUG
+sDodgeOffsetY_MCMText = "Dodge Offset Y";
+;DEBUG
+
+
+sBlack = "Black";
+sWhite = "White";
+sCyan = "Cyan";
+sFadedCyan = "Faded Cyan";
+sFadedYellow = "Faded Yellow";
+sGray = "Gray";
+sGreen = "Green";
+sRed = "Red";
+sYellow = "Yellow";
+sPerkYellow = "Perk Yellow";
+sCashGreen = "Resources Green";
+sPurple = "Purple";
+sOrange = "Orange";
+sOrangeEngineering = "Orange Engineering";
+sBlueScience = "Blue Science";
+sObjIconBackground = "Objective Icon Background";
+
+LayoutArray[0] = "Auto"
+LayoutArray[1] = "Graze and Crit D. to the left"
+LayoutArray[2] = "Graze and Crit D. on each side"
+LayoutArray[3] = "Graze and Crit D. to the right"
+sLayoutCustom = "Custom Layout <index>"
+
+;sShowAlwaysShotBreakdownHUD_MCMText = "Always Show Shot Breakdown";
+sGroupShotWings_MCMText = "Shot Wings Settings";
+
+sGroupToolTips_MCMTtext = "ToolTips Settings";
+sToolTipAlpha_MCMText = "ToolTip Background Transparency";
+sShowEnemyToolTip_MCMText = "Show Extra Enemy ToolTips";
+sShowExtraWeaponStats_MCMText = "Show Weapon Upgrade Details";
+
+
+[HitCalcLib]
+LOWER_DIFFICULTY_MSG = "Lower Difficulty";
+MISS_STREAK_MSG = "Miss Streak";
+SOLDIER_LOST_BONUS = "Soldier Lost Bonus";
+
+
+[WOTC_DisplayHitChance_UITacticalHUD_ShotWings]
+CRIT_DAMAGE_LABEL =  "CRITICAL DAMAGE";
+MULTIPLIER="Multiplier"
+
+[WOTC_DisplayHitChance_UITacticalHUD_ShotHUD]
+CRIT_DAMAGE_LABEL="C-DMG";
+;GRAZE_CHANCE_LABEL="GRAZED";
+
+
+[StatListLib]
+AssistsLabel = "ASSISTS";
+FlankCritLabel = "FLANKING CRITICAL"
+
+[HackCalcLib]
+RatioLabel="RATIO"
+
+[HitChance_Localization]
+TongueGrabHit = "Grabbed!";
+HackDefenceLabel = "HACK DEFENCE";
+MindSpinHit = "Mind Spun!"
+ShortCounterAttack = "Counter"
+Grappled = "Grappled!"

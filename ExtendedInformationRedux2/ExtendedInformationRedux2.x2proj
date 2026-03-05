@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>32151971-722d-48d3-a011-220f32e99218</Guid>
+    <Name>ExtendedInformationRedux2</Name>
+    <Description>ExtendedInformationRedux2</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>ExtendedInformationRedux2</AssemblyName>
+    <RootNamespace>ExtendedInformationRedux2</RootNamespace>
+    <ProjectGuid>{cc7cafe1-9e9a-482f-b066-c12a79f33f33}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SolutionRoot>$(MSBuildProjectDirectory)\..\</SolutionRoot>
+    <ScriptsDir>$(SolutionRoot).scripts\\</ScriptsDir>
+    <BuildCommonRoot>$(ScriptsDir)X2ModBuildCommon\</BuildCommonRoot>
+  </PropertyGroup>
+  <Import Project="$(BuildCommonRoot)XCOM2.targets" />
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Content\" />
+    <Folder Include="ContentForCook\" />
+    <Folder Include="Src\ExtendedInformationRedux2\" />
+    <Folder Include="Src\ExtendedInformationRedux2\Classes\" />
+    <Folder Include="Src\ExtendedInformationAPI\" />
+    <Folder Include="Src\ExtendedInformationAPI\Classes\" />
+    <Folder Include="Src\ModConfigMenuAPI\" />
+    <Folder Include="Src\ModConfigMenuAPI\Classes\" />
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComExtendedInformationRedux2_MCMDefaults.ini" />
+    <Content Include="Config\XComIntLoc.ini" />
+    <Content Include="Config\XComShotHUD.ini" />
+    <Content Include="Content\UILibrary_WOTC_DisplayHitChance.upk" />
+    <Content Include="Content\WOTC_DisplayHitChance_ModShaderCache.upk" />
+    <Content Include="Localization\ExtendedInformationRedux2.fra" />
+    <Content Include="Localization\ExtendedInformationRedux2.int" />
+    <Content Include="Src\ExtendedInformationAPI\Classes\EIAbilityTemplate.uc" />
+    <Content Include="Src\ExtendedInformationAPI\Classes\EI_DamagePreviewHelperAPI.uc" />
+    <Content Include="Src\ExtendedInformationAPI\Classes\EI_DamagePreviewTemplateAPI.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\EIHackStructs.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\ExtendedInformationRedux2\LangFallBack.uci" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\DamagePreviewLib.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\ExtendedInformationRedux2_MCMScreen.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\ExtendedInformationRedux2_MCMScreenListener.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\ExtendedInformationRedux2_UITacticalHUD_ShotHUD.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\ExtendedInformationRedux2_UITacticalHUD_ShotWings.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\HackCalcLib.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\HitCalcLib.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\HitChanceBuildVisualization.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\HitChance_Localization.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\MCM_Defaults.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\StatListLib.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\UIAbilityListItem_HitChance.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\UIAbilityList_HitChance.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\UIEffectListItem_HitChance.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\UIEffectList_HitChance.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\UITacticalHUD_AbilityTooltip_HitChance.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\UITacticalHUD_BuffsTooltip_HitChance.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\UITacticalHUD_Enemies_HitChance.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\UITacticalHUD_EnemyAbilityTooltip.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\UITacticalHUD_EnemyTooltip_HitChance.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\UITacticalHUD_SoldierInfoTooltip_HitChance.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\UITacticalHUD_Tooltips_HitChance.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\UITooltipGroup_Share.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\UITooltipInfoList_HitChance.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\X2Action_ApplyWeaponDamageToUnit_HITCHANCE.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\X2DownloadableContentInfo_ExtendedInformationRedux2.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\X2EventListener_ExtendedInformation.uc" />
+    <Content Include="Src\ExtendedInformationRedux2\Classes\X2TacticalGameRuleset_BreakdownObserver.uc" />
+    <Content Include="Src\ModConfigMenuAPI\MCM_API_CfgHelpers.uci" />
+    <Content Include="Src\ModConfigMenuAPI\MCM_API_Includes.uci" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_Button.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_Checkbox.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_Dropdown.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_Instance.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_Label.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_Setting.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_SettingsGroup.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_SettingsPage.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_Slider.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\MCM_API_Spinner.uc" />
+    <Content Include="Src\ModConfigMenuAPI\Classes\UIAlertPanel_ShowEnemies.uc" />
+  </ItemGroup>
+</Project>
